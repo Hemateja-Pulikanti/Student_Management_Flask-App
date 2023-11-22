@@ -35,7 +35,9 @@ body {
     background-color: #b0b0b0;
     border-radius: 5px;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 .student-details-heading {
     padding-left: 400px;
@@ -104,9 +106,9 @@ table {
     background-color: blue;
 }
 .add-student-button {
-    position: relative;
+    position: fixed;
     left: 300px;
-    top: 30px;
+    top: 750px;
 }
 .add-student-button button {
     background-color: #2980b9;
