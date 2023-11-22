@@ -36,6 +36,8 @@ body {
     border-radius: 5px;
     padding: 20px;
     overflow-y: auto;
+    overflow-x: hidden;
+
 }
 .student-details-heading {
     padding-left: 400px;
@@ -47,6 +49,7 @@ body {
     position: relative;
     top: -225px;
     left: 300px;
+    overflow-x: hidden;
 }
 .student-details-marks {
     position: relative;
@@ -104,9 +107,9 @@ table {
     background-color: blue;
 }
 .add-student-button {
-    position: relative;
-    left: 300px;
-    top: 30px;
+    position: fixed;
+    left: 37vb;
+    top: 90vh;
 }
 .add-student-button button {
     background-color: #2980b9;
