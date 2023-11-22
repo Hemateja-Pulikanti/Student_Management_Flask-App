@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Management Application</title>
+        <link rel = "stylesheet" type = "text/css" href = {{url_for('static', filename = 'home.css')}}>
+    </head>
+    <body>
+        <div class = "top-bar">
+            <h1>Student Management</h1>
+            <div class = "search">
+                <input type = "text" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class = "bottom-bar">
+            <div class = "student-list">
+                <h2> Students List </h2>
+                {% for name in student_names %}
+                    <a href = "{{ url_for('get_student_details', index=loop.index-1) }}" class = "student-link">{{ name }}</a>
+                {% endfor %}
+                <div class="add-student-button">
+                    <a href="{{ url_for('add_student_page') }}"><button>Add Student</button></a>
+                </div>
+            </div>
+            <div class="student-details">
+                {% if student_details %}
+                    <div class = "student-details-heading">
+                    <h1> Student Details </h1>
+                    </div>
+                    <div class = "student-details-profile">
+                        <div class = "queries">
+                                <h2> Name </h2>
+                                <h2> Age </h2>
+                                <h2> Date of Birth </h2>
+                                <h2> Class </h2>
+                        </div>
+                        <div class = "details">
+                            <h2> {{student_details['Full Name']}} </h2>
+                            <h2> {{student_details['Age']}} </h2>
+                            <h2> {{student_details['Date of Birth']}} </h2>
+                            <h2> {{student_details['Class']}} </h2>
+                        </div>
+                    </div>
+                    <div class = "student-details-marks">
+                        <h1> Marks </h1>
+                        <table>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Mark</th>
+                            </tr>
+                            {% for subject, mark in student_details['Marks'].items() %}
+                                <tr>
+                                    <td>{{ subject }}</td>
+                                    <td>{{ mark }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>   
+                    </div>
+                    <div class="stats">
+                        <h1> Average marks : {{average_marks}}</h1>
+                        <h1> Percentage : {{percentage}}</h1>
+                        <h1> Grade : {{grade}}</h1>
+                    </div>                    
+                    <div class="delete-student">
+                        <form action="{{ url_for('delete_student', name=student_details['Full Name']) }}" method="post">
+                            <button type="submit">Delete Student</button>
+                        </form>
+                    </div>                                                              
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>

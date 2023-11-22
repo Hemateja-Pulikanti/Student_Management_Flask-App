@@ -1,0 +1,132 @@
+{
+  "students": [
+    {
+      "Age": 21,
+      "Class": "12",
+      "Date of Birth": "2002-11-25",
+      "Full Name": "Hemteja",
+      "Marks": {
+        "Chemistry": 70,
+        "English": 92,
+        "Maths": 95,
+        "Physics": 85
+      },
+      "Subjects List": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English"
+      ]
+    },
+    {
+      "Age": 20,
+      "Class": "12",
+      "Date of Birth": "2003-07-03",
+      "Full Name": "Abdul Rahman",
+      "Marks": {
+        "Chemistry": 98,
+        "English": 93,
+        "Maths": 90,
+        "Physics": 92
+      },
+      "Subjects List": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English"
+      ]
+    },
+    {
+      "Age": 21,
+      "Class": "12",
+      "Date of Birth": "2002-05-30",
+      "Full Name": "Surya",
+      "Marks": {
+        "Chemistry": 70,
+        "English": 90,
+        "Maths": 85,
+        "Physics": 90
+      },
+      "Subjects List": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English"
+      ]
+    },
+    {
+      "Age": 21,
+      "Class": "12",
+      "Date of Birth": "2002-05-23",
+      "Full Name": "Akash",
+      "Marks": {
+        "Chemistry": 75,
+        "English": 90,
+        "Maths": 80,
+        "Physics": 70
+      },
+      "Subjects List": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English"
+      ]
+    },
+    {
+      "Age": 19,
+      "Class": "10",
+      "Date of Birth": "2004-03-20",
+      "Full Name": "Charan",
+      "Marks": {
+        "English": 90,
+        "Maths": 95,
+        "Science": 80,
+        "Social Studies": 75,
+        "Telugu": 95
+      },
+      "Subjects List": [
+        "Maths",
+        "Science",
+        "Social Studies",
+        "Telugu",
+        "English"
+      ]
+    },
+    {
+      "Age": 19,
+      "Class": "10",
+      "Date of Birth": "2004-09-17",
+      "Full Name": "Rajith",
+      "Marks": {
+        "English": 90,
+        "Maths": 90,
+        "Science": 80,
+        "Social Studies": 70,
+        "Telugu": 87
+      },
+      "Subjects List": [
+        "Maths",
+        "Science",
+        "Social Studies",
+        "English",
+        "Telugu"
+      ]
+    },
+    {
+      "Age": 19,
+      "Class": "10",
+      "Date of Birth": "2004-10-29",
+      "Full Name": "Yashwanth",
+      "Marks": {
+        "Maths": 60,
+        "jhugub": 76,
+        "uhus": 34
+      },
+      "Subjects List": [
+        "Maths",
+        "uhus",
+        "jhugub"
+      ]
+    }
+  ]
+}

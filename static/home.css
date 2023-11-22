@@ -1,0 +1,131 @@
+body {
+    background-color:  whitesmoke;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+.top-bar {
+    height: 20%;
+    background-color: orangered;
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.bottom-bar {
+    height: 80%;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.student-list {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    color: black;
+    font-size: 30px;
+    overflow-y: scroll;
+}
+.student-details {
+    width: 70%;
+    background-color: #b0b0b0;
+    border-radius: 5px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.student-details-heading {
+    padding-left: 400px;
+}
+.queries {
+    padding-top: 50px;
+}
+.details {
+    position: relative;
+    top: -225px;
+    left: 300px;
+}
+.student-details-marks {
+    position: relative;
+    top: -150px;
+}
+.student-details-marks table,tr,th,td {
+    border: 1px solid;
+}
+table {
+    width: 400px;
+}
+.stats {
+    position: relative;
+    top: -100px;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.search input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.search button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search button:hover {
+    background-color: blue;
+}
+.delete-student {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 500px;
+    top: 50px;
+}
+.delete-student button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.delete-student button:hover {
+    background-color: blue;
+}
+.add-student-button {
+    position: relative;
+    left: 300px;
+    top: 30px;
+}
+.add-student-button button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.add-student-button button:hover {
+    background-color: blue;
+}
+.student-link {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5px 0; 
+    cursor: pointer;
+}
+.student-link:hover {
+    background-color: #ddd;
+}

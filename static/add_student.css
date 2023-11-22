@@ -1,0 +1,51 @@
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+.top-bar {
+    height: 20%;
+    background-color: orangered;
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    padding: 0 20px;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b0b0b0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: blue;
+}
+#subjects-marks {
+    margin-top: 20px;
+}
+.subject-mark {
+    margin-bottom: 10px;
+}
