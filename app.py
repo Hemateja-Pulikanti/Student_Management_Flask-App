@@ -1,6 +1,13 @@
-from flask import Flask, render_template, request, redirect, url_for, json
+from flask import Flask, render_template, redirect, url_for, request
+import json
 
 app = Flask(__name__)
+
+"""
+    Getting data from Json file and Saving Updated data
+    Calculate average marks
+    Calculate Percentage and assign Grades
+"""
 
 def get_data():
     with open('data/details.json') as json_file:
@@ -33,6 +40,12 @@ def calculate_grade(average_marks):
     else:
         return 'F'
 
+"""
+    Main page
+    Getting Students details 
+    Logic - By using Index Value of student data as Identifier.
+"""
+
 @app.route('/')
 def main_page():
     data = get_data()
@@ -60,6 +73,12 @@ def get_student_details(index):
         )
     else:
         return "<h1> Student not Found </h1>"
+
+"""
+    Delete Student
+    Add Student
+    Logic - Comparing Current student name with all students in the list and deleting records if match found.
+"""
 
 @app.route('/delete_student/<name>', methods=['POST'])
 def delete_student(name):
@@ -91,12 +110,10 @@ def add_student():
     data = get_data()
     students = data['students']
 
-    # Check if the student with the same name already exists
     for student in students:
         if student['Full Name'] == new_student_name:
             return "<h1>Student with the same name already exists!</h1>"
 
-    # Add the new student
     new_student = {
         "Full Name": new_student_name,
         "Age": new_student_age,
@@ -112,4 +129,4 @@ def add_student():
     return redirect(url_for('main_page'))
 
 if __name__ == "__main__":
-    app.run(host = '0.0.0.0')
+    app.run(debug=True, port=9000)
