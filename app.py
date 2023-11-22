@@ -112,4 +112,4 @@ def add_student():
     return redirect(url_for('main_page'))
 
 if __name__ == "__main__":
-    app.run(debug=True, port=9000)
+    app.run(host = '0.0.0.0')
