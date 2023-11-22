@@ -43,13 +43,12 @@ body {
     padding-left: 400px;
 }
 .queries {
-    padding-top: 50px;
+    padding-top: 2vh;
 }
 .details {
     position: relative;
-    top: -225px;
+    top: -27vh;
     left: 300px;
-    overflow-x: hidden;
 }
 .student-details-marks {
     position: relative;
