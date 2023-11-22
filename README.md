@@ -55,4 +55,4 @@ The project is organized with the following structure:
 
 ## Deployment
 
-The application is deployed using [Render](https://render.com/) by connecting to the GitHub repository. Click here for the Hosted Website
+The application is deployed using [Render](https://render.com/) by connecting to the GitHub repository. Click here for the Hosted Website [Student Management Application](https://student-management-flask-app.onrender.com)
