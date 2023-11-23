@@ -53,6 +53,28 @@ The project is organized with the following structure:
 
 - HTML and CSS: Basic HTML for structure and CSS for styling create a straightforward frontend.
 
+## Functionality
+
+### 1. View Student List
+- On the left side of the web page, find a section containing the list of all available students.
+- Each student's name is a clickable link.
+
+### 2. View Student Details
+- Clicking on a specific student's name on the left side displays detailed information about that student on the right side of the web page.
+- Information includes Full Name, Age, Date of Birth, Class, Subjects List, and Marks.
+
+### 3. Delete Student
+- While viewing a student's details, you have the option to delete that student.
+- Upon deletion, the student is removed from the list, and the updated student list is displayed.
+
+### 4. Add New Student
+- A dedicated "Add Student" button is available, leading to a form where you can input details for a new student.
+- After submitting the form, the new student is added to the list, and you can view their details by clicking on their name.
+
+### 5. Update Student Details
+- Clicking on the "Update Details" button for a student navigates you to a form where you can update the student's information.
+- After updating, the student's details are refreshed, and the changes are reflected in the student list.
+
 ## Deployment
 
 The application is deployed using [Render](https://render.com/) by connecting to the GitHub repository. Click here for the Hosted Website [Student Management Application](https://student-management-flask-app.onrender.com)
