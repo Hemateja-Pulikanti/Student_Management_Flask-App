@@ -71,10 +71,6 @@ The project is organized with the following structure:
 - A dedicated "Add Student" button is available, leading to a form where you can input details for a new student.
 - After submitting the form, the new student is added to the list, and you can view their details by clicking on their name.
 
-### 5. Update Student Details
-- Clicking on the "Update Details" button for a student navigates you to a form where you can update the student's information.
-- After updating, the student's details are refreshed, and the changes are reflected in the student list.
-
 ## Deployment
 
 The application is deployed using [Render](https://render.com/) by connecting to the GitHub repository. Click here for the Hosted Website [Student Management Application](https://student-management-flask-app.onrender.com)
